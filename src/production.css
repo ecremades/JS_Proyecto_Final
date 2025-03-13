@@ -1,0 +1,116 @@
+/* Estilos específicos para producción */
+
+/* Correcciones globales para todos los SVG de la página */
+svg {
+  width: auto !important;
+  height: auto !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+}
+
+/* Aseguramos que los iconos SVG tengan el tamaño correcto */
+.category-link svg {
+  width: 20px !important;
+  height: 20px !important;
+  flex-shrink: 0 !important;
+}
+
+/* Correcciones para el icono del logo en el header */
+.flex.items-center svg {
+  width: 32px !important;
+  height: 32px !important;
+}
+
+/* Correcciones para el icono de búsqueda */
+#search-button svg {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+/* Correcciones para el icono de carga */
+#loading-indicator svg {
+  width: 32px !important;
+  height: 32px !important;
+}
+
+/* Correcciones para el icono de GitHub en el footer */
+footer svg {
+  width: 24px !important;
+  height: 24px !important;
+}
+
+/* Estilos para los iconos en el menú de categorías */
+.category-link {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 0.375rem !important;
+  transition: background-color 0.3s !important;
+}
+
+.category-link:hover {
+  background-color: #e0f2fe !important;
+}
+
+.active-category {
+  background-color: #2563eb !important;
+  color: white !important;
+}
+
+/* Estilos para los artículos de noticias */
+.news-article {
+  background-color: white !important;
+  border-radius: 0.5rem !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+  overflow: hidden !important;
+  margin-bottom: 1.5rem !important;
+  transition: transform 0.3s, box-shadow 0.3s !important;
+}
+
+.news-article:hover {
+  transform: translateY(-0.25rem) !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Estilos para el spinner de carga */
+.animate-spin {
+  animation: spin 1s linear infinite !important;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Estilos para mensajes de error */
+.error-message {
+  background-color: #fee2e2 !important;
+  border-left: 4px solid #ef4444 !important;
+  color: #b91c1c !important;
+  padding: 1rem !important;
+  border-radius: 0.25rem !important;
+}
+
+/* Estilos para botones */
+.btn, button {
+  background-color: #2563eb !important;
+  color: white !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 0.375rem !important;
+  transition: background-color 0.3s !important;
+}
+
+.btn:hover, button:hover {
+  background-color: #1d4ed8 !important;
+}
+
+/* Mejoras de accesibilidad */
+a:focus, button:focus, input:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5) !important;
+}
