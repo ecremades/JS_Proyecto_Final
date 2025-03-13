@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+  <link rel="icon" type="image/svg+xml" href="/JS_Proyecto_Final/assets/favicon-8df9df1d-36400b72.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Noticias App - The Guardian</title>
   <meta name="description" content="Aplicación de noticias que muestra artículos de The Guardian" />
@@ -10,6 +10,24 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   
   <!-- Los estilos se importan desde main.js -->
+  
+  
+
+  <!-- Script para verificar el entorno -->
+  <script>
+    // Detectar si estamos en GitHub Pages
+    window.addEventListener('DOMContentLoaded', function() {
+      const isGitHubPages = window.location.href.includes('github.io');
+      console.log('Ejecutando en GitHub Pages:', isGitHubPages);
+      
+      // Añadir una clase al body para aplicar estilos específicos si es necesario
+      if (isGitHubPages) {
+        document.body.classList.add('github-pages');
+      }
+    });
+  </script>
+  <script type="module" crossorigin src="/JS_Proyecto_Final/assets/index-4caf25b3.js"></script>
+  <link rel="stylesheet" href="/JS_Proyecto_Final/assets/index-405c8657.css">
 </head>
 <body>
   <div class="min-h-screen flex flex-col">
@@ -169,6 +187,6 @@
   </div>
 
   <!-- Script principal -->
-  <script type="module" src="./src/main.js"></script>
+  
 </body>
 </html>
